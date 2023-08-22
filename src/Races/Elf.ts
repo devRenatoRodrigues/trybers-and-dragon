@@ -6,7 +6,7 @@ class Elf extends Race {
   constructor(
     _name: string,
     _dexterity: number,
-    public maxLifePoints = 99,
+    public maxLifePoints: number = 99,
   ) {
     super(_name, _dexterity);
   }

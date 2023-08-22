@@ -5,7 +5,7 @@ class Dwarf extends Race {
   constructor(
     _name: string,
     _dexterity: number,
-    public maxLifePoints = 80,
+    public maxLifePoints: number = 80,
   ) {
     super(_name, _dexterity);
   }

@@ -5,7 +5,7 @@ class Orc extends Race {
   constructor(
     _name: string,
     _dexterity: number,
-    public maxLifePoints = 74,
+    public maxLifePoints: number = 74,
   ) {
     super(_name, _dexterity);
   }
