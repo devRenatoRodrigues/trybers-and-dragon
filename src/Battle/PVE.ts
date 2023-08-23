@@ -1,6 +1,4 @@
-import Character from '../Character';
 import Fighter, { SimpleFighter } from '../Fighter';
-import Monster from '../Monster';
 import Battle from './Battle';
 
 class PVE extends Battle {
@@ -28,11 +26,3 @@ class PVE extends Battle {
   }
 }
 export default PVE;
-
-const play1 = new Character('Renato');
-// const monster = [new Monster(), new Monster(), new Monster()];
-const monster = [new Monster()];
-
-const newbattle = new PVE(play1, monster);
-
-console.log(newbattle.fight());
