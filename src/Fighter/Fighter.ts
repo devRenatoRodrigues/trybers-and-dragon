@@ -1,16 +1,21 @@
 import Energy from '../Energy';
 
-interface Fighter {
+interface Attack {
   lifePoints: number;
+  attack(enemy:Attack):void;
+  receiveDamage(attackPoints: number):number
+}
+
+interface Fighter extends Attack {
   strength: number;
   defense: number
   energy?: Energy
 
-  attack(enemy:Fighter):void;
   special?(enemy: Fighter): void;
   levelUp():void;
-  receiveDamage(attackPoints: number):number
 
 }
 
 export default Fighter;
+
+export { Attack };
