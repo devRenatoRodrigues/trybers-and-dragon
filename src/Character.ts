@@ -78,7 +78,9 @@ class Character implements Fighter {
     if (damage <= 0) {
       this._lifePoints -= 1;
     }
-    if (this.lifePoints <= 0) return -1;
+    if (this.lifePoints <= 0) {
+      this._lifePoints = -1;
+    }
     return this.lifePoints;
   }
 
